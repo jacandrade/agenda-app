@@ -1,0 +1,101 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+	min-width: 360px;
+	overflow: auto;
+}
+
+.jumbotron {
+	position: relative;
+	h1,
+	hr,
+	p {
+		padding-left: 15px;
+	}
+}
+
+.navbar-laravel {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.avatar {
+	width: 64px;
+	height: 64px;
+}
+
+.contact {
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #6c757d;
+	border-radius: 5px;
+}
+
+.media-body,
+.card-body {
+	position: relative;
+
+	.btn-function {
+		position: absolute;
+		right: 10px;
+		width: 50px;
+	}
+
+	.btn-function-edit {
+		top: 0px;
+	}
+
+	.btn-function-delete {
+		bottom: -5px;
+	}
+
+	.btn-function-message-edit {
+		top: 10px;
+	}
+
+	.btn-function-message-delete {
+		bottom: 10px;
+	}
+}
+
+.card {
+	margin: 10px;
+}
+
+.message-card {
+	width: 300px;
+}
+
+.btn-form {
+	margin: 10px 10px 10px 0;
+}
+
+.btn-create {
+	position: absolute;
+	bottom: 20px;
+	right: 50px;
+}
+
+@media screen and (max-width: 767px) {
+	.message-card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		padding: 10px 0;
+	}
+
+	.btn-create {
+		bottom: 5px;
+		right: 35px;
+	}
+}
